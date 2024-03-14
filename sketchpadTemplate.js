@@ -1,4 +1,4 @@
-  window.sketchpad._css = const css = `
+  window.sketchpad._css = `
       .sketchpad.container {
         display: flex;
         flex-direction: column;
