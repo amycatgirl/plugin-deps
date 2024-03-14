@@ -68,7 +68,6 @@ function clearAll() {
 	canvas.width = canvas.width
 	ctx.fillStyle = "#fff";
 	ctx.fillRect(0, 0, canvas.width, canvas.height);
-	// apparently it's that simple
 }
 
 function convertToImage() {
