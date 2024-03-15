@@ -9,8 +9,8 @@
 
         gap: 1rem;
 
-        background-color: #0a0c1d;
-        color: #fff;
+        background-color: var(--primary-header);
+        color: var(--foreground);
       }
 
       .sketchpad.container > canvas {
@@ -30,14 +30,15 @@
 
       .sketchpad .size {
         margin-left: 1rem;
+	accent-color: var(--accent);
       }
 
       .sketchpad .options > button {
         border: unset;
-        background-color: #222639;
+        background-color: var(--primary-background);
         padding: 10px;
         border-radius: 5px;
-        color: #fff;
+        color: var(--foreground);
       }
     `;
     
