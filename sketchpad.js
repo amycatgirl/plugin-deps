@@ -81,9 +81,7 @@ function draw2(x, y) {
 			skip1 = false;
 			skip2 = false;
 		} else {
-			//ctx.lineTo(x,y);
 			ctx.bezierCurveTo(cp1x, cp1y, cp2x, cp2y, x, y);
-			//ctx.quadraticCurveTo(cp1x, cp1y, x, y);
 			skip1 = true;
 			skip2 = false;
 		}
