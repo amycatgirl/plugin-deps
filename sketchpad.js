@@ -1,6 +1,7 @@
 const canvas = document.getElementById('drawandchat');
 const colourInput = document.getElementById('colour');
 const sizeInput = document.getElementById('size');
+const captionInput = document.getElementById('caption');
 
 const ctx = canvas.getContext('2d');
 
@@ -77,8 +78,9 @@ async function startUpload() {
 	const bs = convertToImage();
 	const blb = window.sketchpad.internal.dataURItoBlob(bs);
 	const atmnid = await window.sketchpad.internal.autumnUpload(blb);
-	await window.sketchpad.uploadSketchpad(atmnid);
+	await window.sketchpad.uploadSketchpad(atmnid, caption.value ?? "");
 	clearAll()
+        caption.value = ""
 }
 
 canvas.addEventListener('mousedown', (ev) => {
