@@ -79,8 +79,8 @@ async function startUpload() {
 	const blb = window.sketchpad.internal.dataURItoBlob(bs);
 	const atmnid = await window.sketchpad.internal.autumnUpload(blb);
 	await window.sketchpad.uploadSketchpad(atmnid, caption.value ?? "");
-	clearAll()
-        caption.value = ""
+	clearAll();
+        caption.value = "";
 }
 
 canvas.addEventListener('mousedown', (ev) => {
