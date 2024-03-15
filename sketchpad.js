@@ -91,11 +91,11 @@ function draw2(x, y) {
 
 function draw(ev) {
 	const pos = getMousePos(ev);
-	draw2(pos.x, pos.y)
+	draw2(pos.x, pos.y);
 }
 
 function clearAll() {
-	canvas.width = canvas.width
+	canvas.width = canvas.width;
 	ctx.fillStyle = "#fff";
 	ctx.fillRect(0, 0, canvas.width, canvas.height);
 }
