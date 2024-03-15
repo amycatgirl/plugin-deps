@@ -94,8 +94,9 @@
 			</div>
 		</div>
 		<div class="options">
-			<button id="toimage" onclick="convertToImage()">Download</button>
+			<button id="toimage" onclick="startUpload()">Upload</button>
 			<button id="deleteAll" onclick="clearAll();">Clear</button>
+   			<button id="close" onclick="window.sketchpad.toggleSketchpad()">Close</button>
 		</div>
 		<div class="info">
 			<span>sketchvolt</span> - <span>1.0.0</span>  - <a href="https://github.com/amycatgirl/plugin-deps" target="_blank">Source Code</a>
