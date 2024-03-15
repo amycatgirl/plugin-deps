@@ -57,8 +57,8 @@
 			</div>
 		</div>
 		<div class="options">
-			<button id="toimage">Download</button>
-			<button id="deleteAll">Clear</button>
+			<button id="toimage" onclick="startUpload()">Share</button>
+			<button id="deleteAll" onclick="clearAll()">Clear</button>
 		</div>
       </div>
       <style>${window.sketchpad._css}</style>
