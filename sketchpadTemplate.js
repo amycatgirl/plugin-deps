@@ -53,7 +53,7 @@
 			</div>
 			<div class="size">
 				<label for="size">Size</label>
-				<input type="range" value=4 min=1 max=10 id="size">
+				<input type="range" value=4 min=1 max=50 id="size">
 			</div>
 		</div>
 		<div class="options">
