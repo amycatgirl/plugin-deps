@@ -81,7 +81,6 @@
 				<button id="#FFC0CB">Pink</button>
 				<input type="color" value="#000" id="colour">
 			</div>
-			<canvas id="drawandchat" width=400 height=400></canvas>
 			<div class="pentools">
 				<button id="pen">Pen</button>
 				<button id="eraser">Eraser</button>
