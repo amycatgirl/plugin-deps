@@ -6,45 +6,45 @@ const ctx = canvas.getContext('2d');
 
 var skip1, skip2, cp1x, cp2x, cp1y, cp2y;
 
-var currentColour = "#000"
-var currentSize = 5
+var currentColour = "#000";
+var currentSize = 5;
 
 ctx.fillStyle = "#fff";
 ctx.fillRect(0, 0, canvas.width, canvas.height);
 
 colourInput.addEventListener('change', (ev) => {
 	currentColour = ev.target.value
-})
+});
 
 sizeInput.addEventListener('change', (ev) => {
 	currentSize = ev.target.value
-})
+});
 
 for (const button of document.querySelectorAll(".picker > button")) {
 	button.addEventListener('click', () => {
 		currentColour = button.id
 		colourInput.value = currentColour
-	})
-}
+	});
+};
 
 for (const button of document.querySelectorAll(".pentools > button")) {
 	if (button.id === "pen") {
 		button.addEventListener('click', () => {
-			currentColour = "#000000"
-			colourInput.value = currentColour
-		})
+			currentColour = "#000000";
+			colourInput.value = currentColour;
+		});
 	} else if (button.id === "eraser") {
 		button.addEventListener('click', () => {
-			currentColour = "#ffffff"
-			colourInput.value = currentColour
-		})
+			currentColour = "#ffffff";
+			colourInput.value = currentColour;
+		});
 	} else {
 		button.addEventListener('click', () => {
-			currentSize = button.id
-			sizeInput.value = currentSize
-		})
-	}
-}
+			currentSize = button.id;
+			sizeInput.value = currentSize;
+		});
+	};
+};
 
 var pressed = false;
 
@@ -100,7 +100,6 @@ function clearAll() {
 	canvas.width = canvas.width
 	ctx.fillStyle = "#fff";
 	ctx.fillRect(0, 0, canvas.width, canvas.height);
-	// apparently it's that simple
 }
 
 function convertToImage() {
@@ -123,7 +122,7 @@ canvas.addEventListener('mousedown', (ev) => {
 	const mousePos = getMousePos(ev)
 	ctx.fillStyle = currentColour;
 	ctx.fillRect(mousePos.x, mousePos.y, currentSize, currentSize)
-	ctx.stroke()
+	ctx.stroke();
 }, false)
 
 canvas.onmouseleave = () => {
