@@ -1,7 +1,7 @@
 const canvas = document.getElementById('drawandchat');
 const colourInput = document.getElementById('colour');
 const sizeInput = document.getElementById('size');
-const captionInput = document.getElementById('caption')
+const captionInput = document.getElementById('caption');
 const ctx = canvas.getContext('2d');
 
 var skip1, skip2, cp1x, cp2x, cp1y, cp2y;
