@@ -57,6 +57,7 @@
 				<input type="range" value=4 min=1 max=50 id="size">
 			</div>
 		</div>
+  		<input type="text" id="caption" placeholder="Add a caption!" value="" maxlength=2000></input>
 		<div class="options">
 			<button id="toimage" onclick="startUpload()">Share</button>
 			<button id="deleteAll" onclick="clearAll()">Clear</button>
