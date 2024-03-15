@@ -64,4 +64,4 @@
       <style>${window.sketchpad._css}</style>
     `;
 
-document.querySelector(".sketchpad > controls").insertAdjacentHTML("afterend", "<canvas id="drawandchat" width=400 height=400></canvas>")
+document.querySelector(".sketchpad > controls").insertAdjacentHTML("afterend", "<canvas id='drawandchat' width=400 height=400></canvas>")
