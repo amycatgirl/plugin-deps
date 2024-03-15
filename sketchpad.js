@@ -13,17 +13,17 @@ ctx.fillStyle = "#fff";
 ctx.fillRect(0, 0, canvas.width, canvas.height);
 
 colourInput.addEventListener('change', (ev) => {
-	currentColour = ev.target.value
+	currentColour = ev.target.value;
 });
 
 sizeInput.addEventListener('change', (ev) => {
-	currentSize = ev.target.value
+	currentSize = ev.target.value;
 });
 
 for (const button of document.querySelectorAll(".picker > button")) {
 	button.addEventListener('click', () => {
-		currentColour = button.id
-		colourInput.value = currentColour
+		currentColour = button.id;
+		colourInput.value = currentColour;
 	});
 };
 
