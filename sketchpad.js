@@ -70,7 +70,14 @@ function clearAll() {
 
 function convertToImage() {
 	var img = canvas.toDataURL("image/png");
-	return img
+	return img;
+}
+
+function startUpload() {
+	const bs = convertToImage();
+	const blb = window.sketchpad.internal.dataURItoBlob(bs);
+	const atmnid = await window.sketchpad.internal.autumnUpload(blb)
+	await window.sketchpad.uploadSketchpad(atmnid)
 }
 
 canvas.addEventListener('mousedown', (ev) => {
