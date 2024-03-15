@@ -70,10 +70,7 @@ function clearAll() {
 
 function convertToImage() {
 	var img = canvas.toDataURL("image/png");
-	var a = document.createElement('a');
-	a.href = img;
-	a.download = 'image.png';
-	a.click();
+	return img
 }
 
 canvas.addEventListener('mousedown', (ev) => {
