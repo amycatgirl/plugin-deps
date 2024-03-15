@@ -56,7 +56,6 @@
 				<input type="range" value=4 min=1 max=10 id="size">
 			</div>
 		</div>
-		<canvas id="drawandchat" width=400 height=400></canvas>
 		<div class="options">
 			<button id="toimage">Download</button>
 			<button id="deleteAll">Clear</button>
@@ -64,3 +63,5 @@
       </div>
       <style>${window.sketchpad._css}</style>
     `;
+
+document.querySelector(".sketchpad > controls").insertAdjacentHTML("afterend", "<canvas id="drawandchat" width=400 height=400></canvas>")
