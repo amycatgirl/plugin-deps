@@ -59,6 +59,7 @@
 		<div class="options">
 			<button id="toimage" onclick="startUpload()">Share</button>
 			<button id="deleteAll" onclick="clearAll()">Clear</button>
+			<button id="close" onclick="window.sketchpad.toggleSketchpad()">Close</button>
 		</div>
       </div>
       <style>${window.sketchpad._css}</style>
