@@ -127,7 +127,7 @@ canvas.onmouseleave = () => {
 	canvas.removeEventListener('mousemove', draw, false);
 	pressed = false; 
 	ctx.save();
-}
+};
 
 canvas.addEventListener('mouseup', function() {
 	canvas.removeEventListener('mousemove', draw, false);
