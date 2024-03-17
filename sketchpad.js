@@ -119,9 +119,9 @@ canvas.addEventListener('mousedown', (ev) => {
 	canvas.addEventListener('mousemove', draw, false);
 	const mousePos = getMousePos(ev);
 	ctx.fillStyle = currentColour;
-	ctx.beginPath()
-	ctx.arc(mousePos.x, mousePos.y, currentSize-5, 0, 2 * Math.PI);
-	ctx.fill()
+	ctx.beginPath();
+	ctx.arc(mousePos.x, mousePos.y, currentSize/15, 0, 2 * Math.PI);
+	ctx.fill();
 	ctx.stroke();
 }, false);
 
