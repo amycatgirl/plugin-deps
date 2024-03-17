@@ -111,7 +111,7 @@ async function startUpload() {
 	const atmnid = await window.sketchpad.internal.autumnUpload(blb);
 	await window.sketchpad.uploadSketchpad(atmnid, caption.value ?? "");
 	clearAll();
-        caption.value = "";
+    caption.value = "";
 }
 
 
@@ -119,7 +119,9 @@ canvas.addEventListener('mousedown', (ev) => {
 	canvas.addEventListener('mousemove', draw, false);
 	const mousePos = getMousePos(ev);
 	ctx.fillStyle = currentColour;
-	ctx.fillRect(mousePos.x, mousePos.y, currentSize, currentSize);
+	ctx.beginPath()
+	ctx.arc(mousePos.x, mousePos.y, currentSize-5, 0, 2 * Math.PI);
+	ctx.fill()
 	ctx.stroke();
 }, false);
 
